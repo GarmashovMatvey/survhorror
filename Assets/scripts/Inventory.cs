@@ -8,6 +8,8 @@ public class Inventory : MonoBehaviour
     public List<Item> inventoryItems = new List<Item>();
     void Start()
     {
+        inventoryItems = new List<Item>();
+        
         for (int i = 0; i < StartItems.Count; i++)
         {
             AddItem(StartItems[i]);
